@@ -17,3 +17,8 @@
     max-height: 50vh;
 }
 
+@media (max-width: 480px) {
+    .height {
+        height: 197.33px;
+    }
+}
