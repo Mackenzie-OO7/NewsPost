@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsPost</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+<body>
+     <!--navbar-->
+     <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <div class="container">
+            <div class="d-flex align-items-center icon-container">
+                <img class="ps-2 img-fluid icon" src="/img/Wallpaper01.jpg" alt="">
+            </div>
+            <a class="fs-1 fw-bold ps-2 text-dark text-decoration-none" href="index.html">NewsPost</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse py-2" id="navbarSupportedContent">
+                    <ul class="pe-2 navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item ms-3 fw-bold">
+                            <a class="nav-link" href="index.html">Trending</a>
+                        </li>
+                        <li class="nav-item ms-3 fw-bold">
+                            <a class="nav-link" href="">Latest News</a>
+                        </li>
+                        <li class="nav-item ms-3 fw-bold">
+                            <a class="nav-link" href="">Create a Post</a>
+                        </li>
+                        <li class="nav-item ms-3 fw-bold">
+                            <a class="nav-link" href="">My Blog</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Trending-->
+ <section id="hero-slider" class="hero-slider mb-5">
+        <div class="container-fluid bg-secondary">
+            <div class="Featured-posts pt-1 bg-dark">
+                <h2 class="text-center text-lg-center text-md-start fw-bold fs-1 text-light">TRENDING!</h2>
+                <div class="row" id="featured-posts">
+                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    </div>
+                     <div class="carousel-inner">
+                         <div class="carousel-item active height">
+                            <img src="img/images (65).jpeg" class="d-block w-100 image-fluid" alt="...">
+                            <div class="carousel-caption d-none d-md-block md-5">
+                                <h2 class="fs-1 fw-bold text-start text-danger">Beyonce announces new album "Renaissance"</h2>
+                                <p class="fs-4 fw-bold text-start text-danger">The multiple award-winning singer recently updated her website to show "act i    Renaissance" with a release date set for July 29th, 2022.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item height">
+                            <img src="img/images (65).jpeg" class="d-block w-100 img-fluid" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="fs-1 fw-bold text-start">Beyonce announces new album "Renaissance"</h2>
+                                <p class="fs-4 fw-bold text-start">The multiple award-winning singer recently updated her website to show "act i    Renaissance" with a release date set for July 29th, 2022.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item height">
+                            <img src="img/images (65).jpeg" class="d-block w-100 img-fluid" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="fs-1 fw-bold text-start text-primary">Beyonce announces new album "Renaissance"</h2>
+                                <p class="fs-4 fw-bold text-start text-primary">The multiple award-winning singer recently updated her website to show "act i    Renaissance" with a release date set for July 29th, 2022.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item height" id="height">
+                            <img src="img/20220616_175946.jpg" class="d-block w-100 img-fluid" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h2 class="fs-1 fw-bold text-start text-light">In Other News.....</h2>
+                                <p class="fs-4 fw-bold text-start text-light">Javascript dey carry me where I no know</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+              </div>
+            </div>
+        </div>      
+    </section>
+
+    <div class="card-section my-5">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <div class="post">
+                        <h2 id="card-title" class="fw-bold fs-1 text-center mt-4 pb-3">READ POST HERE:</h2>
+                        <div class="img-post mt-2">
+                            <img src="img/post1.jpg" alt="" id="view-img" class="mx-auto">
+                            <h5 class="text-center fw-bold">sunt aut facere repellat provi</h5>
+                            <p class="text-center text-dark mt-3">quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae est rerum tempore vitae sequi sint nihil reprehenderit dolor beatae ea dolores neque fugia</p>
+                            <div class="btn-div d-flex justify-content-between ">
+                                <button onclick="updatePost(${post.id})" class="btn btn-primary" href="#form-section"><i class="bi bi-heart mx-1"></i> Like</button>
+                                <button class="btn btn-danger btn-outline-dark ms-3" onclick="view(${post.id})"> <i class="bi bi-x-circle mx-1"></i>Dislike</button>
+                                <button class="btn btn-dark btn-outline-light ms-3" onclick="deletePost(${post.id})"><i class="bi bi-arrow-repeat mx-1"></i>Repost</button>
+                            </div>
+                        </div>
+                        <div class="post-texts mb-5">
+                            <p id="card-body" class="pt-4"></p>
+                            <p id="card-title2" class="pt-4 fw-bold"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!--Footer-->
+    <section id="footer-bottom" class="py-3" style="background: #1e1b1b;">
+        <div class="container text-light">
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <h2 class="fw-bold fs-1">NewsPost</h2>
+                </div>
+                <div class="col-lg-5 col-12 pt-3">
+                    <ul class="list-unstyled d-flex align-items-center">
+                        <li>
+                            <a class="text-decoration-none text-light fw-bold pe-3 align-items-center d-flex" href="">Home</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none text-light fw-bold pe-3 align-items-center d-flex" href="">Trending</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none text-light fw-bold pe-3 align-items-center d-flex" href="">Latest News</a>
+                        </li>
+                        <li>
+                            <a class="text-decoration-none text-light fw-bold pe-3 align-items-center d-flex" href="">Create a Post</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-12 d-flex">
+                    <p class="d-flex align-items-center mb-0 fs fw-bold">@ Copyright NewsPost 2022</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/app.js"></script>
+    <script src=" ./js/nextpage.js"></script>
+</body>
+</html>
