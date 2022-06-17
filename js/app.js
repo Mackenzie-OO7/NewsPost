@@ -38,7 +38,7 @@ function latestUI (postsUI) {
                 <div class="btn-div d-flex justify-content-between ">
                     <button onclick="updatelatestPost(${latestPost.id})" class="btn btn-dark" href="#form-section"><i class="bi bi-pencil mx-1"></i>Update</button>
                     <button class="btn btn-warning btn-outline-dark ms-3" onclick="readMorelatest(${latestPost.id})"><i class="bi bi-book mx-1"></i>Read More</button>
-                    <button class="btn btn-danger btn-outline-light ms-3" onclick="deletePostlatest(${latestPost.id})"><i class="bi bi-trash mx-1"></i>Delete</button>
+                    <button class="btn btn-danger btn-outline-light ms-3" onclick="deletelatestPost(${latestPost.id})"><i class="bi bi-trash mx-1"></i>Delete</button>
                 </div>
             </div>
         </div>
@@ -47,7 +47,7 @@ function latestUI (postsUI) {
     latestPostWrapper.innerHTML = latestPostHolder;
 }
 
-function deletePostlatest(id) {
+function deletelatestPost(id) {
     fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
         method: 'DELETE',
     })
