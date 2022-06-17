@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewsPost</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+</head>
+
+  <body>
+      <!--navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+            <div class="container">
+                <div class="d-flex align-items-center icon-container">
+                    <img class="ps-2 img-fluid icon" src="/img/Wallpaper01.jpg" alt="">
+                </div>
+                <a class="fs-1 fw-bold ps-2 text-dark text-decoration-none" href="index.html">NewsPost</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse py-2" id="navbarSupportedContent">
+                        <ul class="pe-2 navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item ms-3 fw-bold">
+                                <a class="nav-link" href="">Trending</a>
+                            </li>
+                            <li class="nav-item ms-3 fw-bold">
+                                <a class="nav-link" href="">Latest News</a>
+                            </li>
+                            <li class="nav-item ms-3 fw-bold">
+                                <a class="nav-link" href="">Create a Post</a>
+                            </li>
+                            <li class="nav-item ms-3 fw-bold">
+                                <a class="nav-link" href="">My Blog</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+   
+        <!--Trending-->
+     <section id="hero-slider" class="hero-slider mb-5">
+            <div class="container-fluid bg-secondary">
+                <div class="Featured-posts pt-1 bg-dark">
+                    <h2 class="text-center text-lg-center text-md-start fw-bold fs-1 text-light">TRENDING!</h2>
+                    <div class="row" id="featured-posts">
+                     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 2"></button>
+                        </div>
+                         <div class="carousel-inner">
+                             <div class="carousel-item active height">
+                                <img src="img/images (65).jpeg" class="d-block w-100 image-fluid" alt="...">
+                                <div class="carousel-caption d-none d-md-block md-5">
+                                    <h2 class="fs-1 fw-bold text-start text-danger">Beyonce announces new album "Renaissance"</h2>
+                                    <p class="fs-4 fw-bold text-start text-danger">The multiple award-winning singer recently updated her website to show "act i    Renaissance" with a release date set for July 29th, 2022.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item height">
+                                <img src="img/images (65).jpeg" class="d-block w-100 img-fluid" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2 class="fs-1 fw-bold text-start">Beyonce announces new album "Renaissance"</h2>
+                                    <p class="fs-4 fw-bold text-start">The multiple award-winning singer recently updated her website to show "act i    Renaissance" with a release date set for July 29th, 2022.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item height">
+                                <img src="img/images (65).jpeg" class="d-block w-100 img-fluid" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h2 class="fs-1 fw-bold text-start text-primary">Beyonce announces new album "Renaissance"</h2>
+                                    <p class="fs-4 fw-bold text-start text-primary">The multiple award-winning singer recently updated her website to show "act i    Renaissance" with a release date set for July 29th, 2022.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                  </div>
+                </div>
+            </div>      
+        </section>
+
+        <!--Latest Posts-->
+        <section>
+            <div class="container">
+                <div class="latest-news mb-5">
+                    <h2 class="text-center text-lg-center text-md-start pb-5 fs-1 fw-bold">LATEST NEWS</h2>
+                    <div class="row" id="latest-news">      
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Create Posts-->
+        <section id="form-section" class="bg-secondary">
+            <div class="container">
+                <form class="row mt-4" id="create-post">
+                    <div class="col-md-6 px-2 col-lg-6 mx-auto">
+                        <h2 class="text-center fs-1 fw-1 pt-2">Upload a Post</h2>
+                        <form id="new-post">
+                            <label for="post-title" class="form-label fw-bold">Title:</label>
+                            <input class="form-control mb-3"id="post-title" type="text" placeholder="Enter Title" required>
+                            <label for="post-body" class="form-label fw-bold">Article:</label>
+                            <textarea class="form-control" cols="10" rows="7" id="post-body" py-4 placeholder="Enter article here" required></textarea>
+                            <button class="btn btn-danger btn-lg px-5 my-3" type="Submit" id="create">Post</button>
+                        </form>
+                    </div>    
+                </form>
+            </div>
+        </section>
+
+        <!--Footer-->
+        <section id="footer-bottom" class="py-3" style="background: #1e1b1b;">
+            <div class="container text-light">
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <h2 class="fw-bold fs-1">NewsPost</h2>
+                    </div>
+                    <div class="col-lg-5 col-12 pt-3">
+                        <ul class="list-unstyled d-flex align-items-center">
+                            <li>
+                                <a class="text-decoration-none text-light fw-bold pe-3 align-items-center d-flex" href="">Home</a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-light fw-bold pe-3 align-items-center d-flex" href="">Trending</a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-light fw-bold pe-3 align-items-center d-flex" href="">Latest News</a>
+                            </li>
+                            <li>
+                                <a class="text-decoration-none text-light fw-bold pe-3 align-items-center d-flex" href="">Create a Post</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-12 d-flex">
+                        <p class="d-flex align-items-center mb-0 fs fw-bold">@ Copyright NewsPost 2022</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/app.js"></script>
+    </body>
+</html>
