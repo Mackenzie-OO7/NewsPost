@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.icon {
+    border-radius: 50%;
+}
+
+.icon-container {
+    max-width: 5%;
+    height: 5%;
+}
+
+.height {
+    max-height: 50vh;
+}
+
